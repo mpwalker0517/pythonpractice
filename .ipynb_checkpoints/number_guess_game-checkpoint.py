@@ -1,5 +1,3 @@
-import random 
-
 class Game:
     """
     Number guessing game. To run, create an
@@ -15,7 +13,7 @@ class Game:
         self.target_num = random.randint(0,100)
         while True:
             guess = self._get_user_guess()
-            if self._check_guess(guess):
+            if self.check_guess(guess):
                 break
         
     def _get_user_guess(self) -> int:
@@ -26,7 +24,7 @@ class Game:
         value of player's guess.    
         """
         while True:
-            guess = input("Please enter a positive integer between 0 and 100: ")
+            guess = input("Please enter a positive integer between 0 and 10: ")
             try:
                 if float(guess).is_integer() and int(guess) >= 0 and int(guess) <=100:
                     return int(guess)
@@ -51,4 +49,3 @@ class Game:
 if __name__ == "__main__":
     game: Game = Game()
     game.start_game()
-    
