@@ -15,10 +15,10 @@ def get_commute_duration():
     return duration
 
 def send_text_message(message):
-    twilio_account_sid = "AC8b38ffcb6ecc28bffbfd707ba91b95c8"
-    twilio_account_token = "8a91ccda15affcd37c197f9f1f43d874"
-    twilio_phone_num = "+18552197302"
-    your_phone_num = "5139070528"
+    twilio_account_sid = ""
+    twilio_account_token = ""
+    twilio_phone_num = ""
+    your_phone_num = ""
     client = Client(twilio_account_sid, twilio_account_token)
 
     client.message.create(
