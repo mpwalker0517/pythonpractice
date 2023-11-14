@@ -11,10 +11,10 @@ def celsius_to_farenheit(celsius):
     return(celsius * 9/5) + 32
 
 def send_text_message(body):
-    account_sid = "AC8b38ffcb6ecc28bffbfd707ba91b95c8"
-    auth_token = "8a91ccda15affcd37c197f9f1f43d874"
-    from_phone_number = "18552197302"
-    to_phone_number = "5139070528"
+    account_sid = ""
+    auth_token = ""
+    from_phone_number = ""
+    to_phone_number = ""
 
     client = Client(account_sid, auth_token)
 
